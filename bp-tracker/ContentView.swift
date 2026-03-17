@@ -77,10 +77,9 @@ struct ContentView: View {
         }
 
         .sheet(isPresented: $showScanner) {
-            // ScannerView() — подключим позже
-            Text("Камера — скоро")
-                .font(.title2)
+            ScannerView()
         }
+
     }
 
     func statusColor(_ systolic: Int) -> Color {
